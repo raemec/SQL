@@ -1,0 +1,28 @@
+
+/**clothing store:
+shirts
+T shirts
+pants
+Caps
+jackets
+**/
+
+CREATE TABLE clothes(id INTEGER PRIMARY KEY, type TEXT,Price INTEGER,FABRIC TEXT,aile INTEGER,season TEXT);
+
+INSERT INTO clothes VALUES (1,"shirts",10,"wool",1,"winter");
+INSERT INTO clothes VALUES(2,"Tshirts",15,"cotton",2,"summer");
+INSERT INTO clothes VALUES (3,"pants",20,"jeans",3,"allseason");
+INSERT INTO clothes VALUES (4,"Caps",30,"viscose",4,"summer");
+INSERT INTO clothes VALUES (5,"jackets",25,"leather",5,"winter");
+
+SELECT * from clothes;
+
+--display the database ordered by Price.
+
+SELECT * from clothes order by price;
+
+--display total number of ailes.
+
+SELECT SUM (aile)FROM clothes 
+
+
